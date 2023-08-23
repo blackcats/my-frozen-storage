@@ -33,7 +33,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "backup_storage_lifecycle" {
   bucket = aws_s3_bucket.backup_storage.id
 
   rule {
-    id = "backup_storage_lifecycle"
+    id     = "backup_storage_lifecycle"
     status = "Enabled"
 
     abort_incomplete_multipart_upload {
@@ -41,12 +41,12 @@ resource "aws_s3_bucket_lifecycle_configuration" "backup_storage_lifecycle" {
     }
 
     transition {
-      days = 1
+      days          = 1
       storage_class = "GLACIER"
     }
 
     transition {
-      days = 91
+      days          = 91
       storage_class = "DEEP_ARCHIVE"
     }
   }
