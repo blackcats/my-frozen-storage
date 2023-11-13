@@ -12,7 +12,7 @@ terraform {
     organization = "blackcats"
 
     workspaces {
-      name = "My_Freezed_Storage"
+      name = "My_Frozen_Storage"
     }
   }
 }

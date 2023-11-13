@@ -1,10 +1,10 @@
-# My Freezed Storage
+# My Frozen Storage
 
 <!-- put some badge here -->
 ![Terraform](https://img.shields.io/badge/Terraform-v1.5.0-%237B42BC?logo=terraform)
 ![Amazon S3](https://img.shields.io/badge/Amazon-S3-%23569A31?logo=amazons3)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/blackcats/my_freezed_storage/terraform.yml?logo=GitHub)
-![GitHub issues](https://img.shields.io/github/issues/blackcats/my_freezed_storage?logo=GitHub)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/blackcats/my-frozen-storage/terraform.yml?logo=GitHub)
+![GitHub issues](https://img.shields.io/github/issues/blackcats/my-frozen-storage?logo=GitHub)
 <!-- Put open pullrequest -->
 
 This is my terraform code to create and manage AWS S3 Glacier for [my backup
@@ -44,7 +44,7 @@ manager (apt for Debian, yum for RedHat like distro...).
 
 Clone this repository:
 ```
-git clone git@github.com:blackcats/my_freezed_storage.git
+git clone git@github.com:blackcats/my-frozen-storage.git
 ```
 
 ## Usage
@@ -84,7 +84,7 @@ names by yours. The following code:
     organization = "blackcats"
 
     workspaces {
-      name = "My_Freezed_Storage"
+      name = "My_Frozen_Storage"
     }
   }
   ...
