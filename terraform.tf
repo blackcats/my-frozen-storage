@@ -7,7 +7,7 @@ terraform {
       version = "~> 5.10"
     }
   }
-
+/*
   cloud {
     organization = "blackcats"
 
@@ -15,6 +15,7 @@ terraform {
       name = "My_Frozen_Storage"
     }
   }
+*/
 }
 
 provider "aws" {
