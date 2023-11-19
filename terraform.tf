@@ -7,15 +7,14 @@ terraform {
       version = "~> 5.10"
     }
   }
-/*
-  cloud {
-    organization = "blackcats"
 
-    workspaces {
-      name = "My_Frozen_Storage"
-    }
-  }
-*/
+#   cloud {
+#     organization = "blackcats"
+#
+#     workspaces {
+#       name = "My_Frozen_Storage"
+#     }
+#   }
 }
 
 provider "aws" {
