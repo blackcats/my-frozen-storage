@@ -1,5 +1,11 @@
 resource "aws_s3_bucket" "backup_storage" {
   bucket = var.bucket_name
+
+  tags = {
+    Function      = "backup_storage"
+    Lifecycle     = "On"
+    Storage_Class = "Glacier"
+  }
 }
 
 resource "aws_s3_bucket_ownership_controls" "backup_storage_controls" {
