@@ -8,13 +8,13 @@ terraform {
     }
   }
 
-#   cloud {
-#     organization = "blackcats"
-#
-#     workspaces {
-#       name = "My_Frozen_Storage"
-#     }
-#   }
+  cloud {
+    organization = "blackcats"
+
+    workspaces {
+      name = "My-Frozen-Storage"
+    }
+  }
 }
 
 provider "aws" {
